@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mikhail Zeidin](https://up.htmlacademy.ru/htmlcss/36/user/2309619).
-* Наставник: `Александр Карташов`.
+* Наставник: [Александр Карташов](https//up.htmlacademy.ru/profile/id77080).
 
 ---
 
