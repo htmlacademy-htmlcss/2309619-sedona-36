@@ -31,3 +31,21 @@ body {
   color: #000000;
   background: #FFFFFF;
 }
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+.advantages-caption {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-caption-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
