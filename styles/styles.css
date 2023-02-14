@@ -37,15 +37,111 @@ body {
   color: #000000;
   font-weight: 700;
 }
-.advantages-caption {
+.advantages-caption, .services-caption, .hotels-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
-.advantages-caption-description {
+.advantages-caption-description, .services-caption-description, .hotels-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.advantages-description {
+  text-align: center;
+  color: #333333;
+}
+.another-color {
+  color: #FFFFFF;
+}
+.advantages-item-one {
+  background: #82B3D3;
+}
+.advantages-item-two {
+  background: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-three {
+  background: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-four {
+  background: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-five {
+  background: #82B3D3;
+}
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.services-description {
+  color: #333333;
+  text-align: center;
+}
+.services-item-background {
+  background: rgba(131, 179, 211, 0.12);
+}
+.button.hotels-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756157;
+  text-decoration: none;
+}
+.hotels {
+  text-align: center;
+}
+.mailing-list {
+  text-align: center;
+  background-color: #455a68;
+}
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.button.newsletter-button {
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mailing-list-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.mailing-list-title-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
