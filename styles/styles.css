@@ -37,14 +37,14 @@ body {
   color: #000000;
   font-weight: 700;
 }
-.advantages-caption, .services-caption, .hotels-title {
+.main-index h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
-.advantages-caption-description, .services-caption-description, .hotels-text {
+.main-index p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -143,5 +143,109 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
+}
+.catalog-products {
+  background-color: #82B3D3;
+}
+.inner-catalog-products-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+.breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.catalog-filter {
+  color: #FFFFFF;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.control-input {
+  font-size: 18px;
+  line-height: 23px;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button-apply {
+  background: #82B3D3;
+}
+.inner-catalog-products-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.product-card-description {
+  color: #333333;
+}
+.product-card-price {
+  color: #333333;
+}
+.product-card-button.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  background: #756157;
+  text-transform: uppercase;
+}
+.button-favorites {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  background: #82B3D3;
+  text-transform: uppercase;
+}
+.rating {
+  background: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.pagination-next {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.mailing-list-catalog {
+  text-align: center;
+}
+.mailing-list-title-catalog {
+  color: #000000;
+}
+.mailing-list-text {
   color: #000000;
 }
