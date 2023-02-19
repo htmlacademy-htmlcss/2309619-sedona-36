@@ -13,12 +13,53 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+  width: 1200px;
+  padding: 0 40px;
+  background: #F2F2F2;
+  outline: 5px solid 	#ff00ff;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background: #FFFFFF;
+  outline: 5px solid 	#682dd4;
+}
+
+.page-header {
+  display: flex;
+  outline: 5px solid 	#adca7f;
+  padding: 0 70px;
+}
+
+.navigation {
+  display: flex;
+  width: 946px;
+  justify-content: space-between;
+}
+
+.navigation-link-logo {
+  display: block;
+  width: 138px;
+  padding-right: 44px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 340px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  width: 270px;
 }
 
 .navigation-link {
@@ -28,6 +69,7 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+
 .button.navigation-link-button {
   font-size: 16px;
   line-height: 20px;
@@ -35,6 +77,14 @@ body {
   font-weight: 700;
   background-color: #756157;
   text-decoration: none;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 5px solid 	#235c57;
 }
 
 .advantages-caption, .services-caption, .hotels-title {
@@ -72,22 +122,36 @@ body {
 
 .advantages-item-one {
   background: #82B3D3;
+  width: 400px;
 }
 
 .advantages-item-two {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  margin: 0;
+
 }
 
 .advantages-item-three {
   background: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .advantages-item-four {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-item-five {
   background: #82B3D3;
+  width: 400px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid 	#5e2fd3;
 }
 
 .services-title {
@@ -105,6 +169,11 @@ body {
 
 .services-item-background {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .button.hotels-link {
@@ -160,13 +229,24 @@ body {
   color: #FFFFFF;
 }
 
+.footer-list {
+  display: flex;
+  margin: 40px 70px 30px;
+}
+
+.footer-social-list {
+  width: 142px;
+}
+
 .footer-contacts-address-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  width: 720px;
 }
 
 .catalog-products {
