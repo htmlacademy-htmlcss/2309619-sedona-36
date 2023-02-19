@@ -249,8 +249,18 @@ body {
   width: 720px;
 }
 
+.main-conteiner {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .catalog-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #3d5f75;
+  padding: 35px 70px 70px;
 }
 
 .inner-catalog-products-title {
@@ -258,6 +268,13 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-item {
@@ -268,7 +285,26 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
   color: #FFFFFF;
+  width: 1060px;
+}
+
+.catalog-filter-group {
+  margin-right: 70px;
+  padding: 0;
+  width: 150px;
+}
+
+.catalog-filter-group-type {
+  margin-right: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.filter-right {
+  width: 550px;
+  margin-left: auto;
 }
 
 .catalog-filter-title {
@@ -301,6 +337,21 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
+.catalog-results {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 60px;
+
+}
+
+.display-cards {
+  color: #000000;
+}
+
+.catalog-results-heder {
+  display: flex;
+}
+
 .inner-catalog-products-results {
   font-weight: 700;
   font-size: 30px;
@@ -310,6 +361,17 @@ body {
 
 .select-control {
   color: #333333;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 340px;
 }
 
 .product-card-title {
@@ -364,6 +426,12 @@ body {
   text-align: center;
 }
 
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-link {
   font-family: 'PT Sans';
   font-style: normal;
@@ -377,7 +445,22 @@ body {
   background-color: #82B3D3;
 }
 
+.pagination-item {
+  display: block;
+  width: 60px;
+  text-align: center;
+}
+
+
+
+.pagination-link {
+  display: block;
+  background-color: #82B3D3;
+  margin-right: 8px;
+}
+
 .pagination-link.pagination-current {
+  display: block;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -395,6 +478,9 @@ body {
   line-height: 26px;
   text-align: center;
   color: #000000;
+  width: 76px;
+  display: block;
+  background-color: #FFFFFF;
 }
 
 .mailing-list-catalog {
