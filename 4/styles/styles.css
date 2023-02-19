@@ -28,6 +28,14 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+.button.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #756157;
+  text-decoration: none;
+}
 
 .advantages-caption, .services-caption, .hotels-title {
   font-weight: 700;
@@ -127,6 +135,8 @@ body {
 }
 
 .button.newsletter-button {
+  font-family: 'PT Sans';
+  font-style: normal;
   background: #82B3D3;
   font-weight: 700;
   font-size: 20px;
@@ -156,6 +166,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 .catalog-products {
@@ -193,6 +204,8 @@ body {
 }
 
 .button {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -251,6 +264,8 @@ body {
 }
 
 .button-favorites {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -270,6 +285,8 @@ body {
 }
 
 .pagination-link {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -280,12 +297,20 @@ body {
   background-color: #82B3D3;
 }
 
-.pagination-current {
+.pagination-link.pagination-current {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #F2F2F2;
   color: #000000;
 }
 
-.pagination-next {
+.pagination-link.pagination-next {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -301,5 +326,10 @@ body {
 }
 
 .mailing-list-text {
-  color: #000000;
+  color: #333333;
+}
+
+.footer-social-item {
+  background: #83B3D3;
+  text-decoration: none;
 }
