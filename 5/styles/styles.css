@@ -20,6 +20,10 @@ html {
   outline: 5px solid 	#ff00ff;
 }
 
+.page-body {
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -229,7 +233,7 @@ body {
   color: #FFFFFF;
 }
 
-.footer-list {
+.footer-social {
   display: flex;
   margin: 40px 70px 30px;
 }
@@ -249,7 +253,7 @@ body {
   width: 720px;
 }
 
-.main-conteiner {
+.main-container {
   display: flex;
   flex-direction: column;
 
@@ -302,7 +306,7 @@ body {
   width: 150px;
 }
 
-.filter-right {
+.filter-button {
   width: 550px;
   margin-left: auto;
 }
@@ -344,8 +348,13 @@ body {
 
 }
 
-.display-cards {
-  color: #000000;
+.select-control {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .catalog-results-heder {
