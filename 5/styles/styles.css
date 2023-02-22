@@ -14,32 +14,32 @@
 }
 
 html {
-  width: 1200px;
-  padding: 0 40px;
-  background: #F2F2F2;
   outline: 5px solid 	#ff00ff;
 }
 
 .page-body {
   margin: 0 auto;
-}
-
-body {
-  margin: 0;
-  display: flex;
   width: 1200px;
+  display: flex;
   flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background: #FFFFFF;
+  outline: 5px solid 	#15e2d1;
+}
+
+body {
+  margin: 0;
   outline: 5px solid 	#682dd4;
+  background: #F2F2F2;
+  width: 1280px;
 }
 
 .page-header {
   display: flex;
-  outline: 5px solid 	#adca7f;
+  outline: 5px solid 	#dd0d7f;
   padding: 0 70px;
 }
 
