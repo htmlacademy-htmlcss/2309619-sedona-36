@@ -391,14 +391,15 @@ body {
 
 .newsletter-form {
   display: flex;
+  height: 52px;
 }
-
 
 .newsletter-form .field {
   width: 452px;
   margin: 0;
   padding: 0;
   border-width: 0;
+  background: #F2F2F2;
 }
 
 .button.newsletter-button {
@@ -407,7 +408,6 @@ body {
   width: 232px;
   border-width: 0;
 }
-
 
   .footer-social {
   display: flex;
@@ -463,11 +463,17 @@ align-items: center;
   color: #FFFFFF;
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
+  width: 495px;
 }
 
 .breadcrumbs {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  width: 114px;
+  height: 21px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
@@ -487,6 +493,10 @@ align-items: center;
   margin-right: 70px;
   padding: 0;
   width: 150px;
+}
+
+.catalog-filter-list {
+list-style-type: none;
 }
 
 .catalog-filter-group-type {
@@ -648,8 +658,6 @@ align-items: center;
   width: 60px;
   text-align: center;
 }
-
-
 
 .pagination-link {
   display: block;
