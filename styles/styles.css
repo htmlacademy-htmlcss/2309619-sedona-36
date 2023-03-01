@@ -229,7 +229,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 1200px;
-  padding: 64px 0px;
+  padding: 64px 0;
   margin: 0;
 }
 
@@ -335,8 +335,20 @@ body {
 }
 
 .mailing-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #455a68;
+  padding: 96px 258px 104px;
+}
+
+.mailing-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .field {
@@ -363,15 +375,41 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0;
+  width: 404px;
+  padding-bottom: 20px;
 }
 
 .mailing-list-title-text {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 54px;
+  width: 475px;
 }
 
-.footer-social {
+.newsletter-form {
+  display: flex;
+}
+
+
+.newsletter-form .field {
+  width: 452px;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+.button.newsletter-button {
+  margin: 0;
+  padding: 0;
+  width: 232px;
+  border-width: 0;
+}
+
+
+  .footer-social {
   display: flex;
   margin: 40px 70px 30px;
   list-style-type: none;
@@ -379,7 +417,10 @@ body {
 
 .footer-social-list {
   width: 142px;
+  height: 40px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contacts-address-phone {
@@ -391,6 +432,14 @@ body {
   color: #000000;
   text-decoration: none;
   width: 720px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.htmlacademy-link {
+display: flex;
+margin-left: auto;
+align-items: center;
 }
 
 .main-container {
