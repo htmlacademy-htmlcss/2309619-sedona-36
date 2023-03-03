@@ -558,6 +558,10 @@ list-style-type: none;
 
 .catalog-results-heder {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 39px;
+  margin-bottom: 40px;
 }
 
 .inner-catalog-products-results {
@@ -565,6 +569,15 @@ list-style-type: none;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 338px;
+}
+
+.design-list {
+  display: flex;
+  min-width: 160px;
+  list-style-type: none;
 }
 
 .select-control {
@@ -576,10 +589,22 @@ list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 80px;
 }
 
 .product-card {
-  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .product-card-title {
@@ -656,13 +681,17 @@ list-style-type: none;
 .pagination-item {
   display: block;
   width: 60px;
+  height: 60px;
   text-align: center;
+  margin-right: 8px;
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   background-color: #82B3D3;
-  margin-right: 8px;
 }
 
 .pagination-link.pagination-current {
@@ -690,7 +719,12 @@ list-style-type: none;
 }
 
 .mailing-list-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 96px 258px 104px;
 }
 
 .mailing-list-title-catalog {
