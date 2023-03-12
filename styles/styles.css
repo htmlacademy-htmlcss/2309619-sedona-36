@@ -70,8 +70,11 @@ body {
 }
 
 .navigation-list.navigation-user {
+  margin: 0;
+  padding: 0;
   margin-left: auto;
-  width: 270px;
+  align-items: center;
+  width: 268px;
 }
 
 .navigation-link {
@@ -82,6 +85,17 @@ body {
   font-weight: 700;
   text-decoration: none;
   padding: 20px 16px;
+  position: relative;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  background-color: #756257;
+  height: 2px;
+  content: "";
 }
 
 .navigation-user .navigation-link {
@@ -105,12 +119,38 @@ body {
   text-decoration: none;
   width: 160px;
   justify-content: center;
+  height: 36px;
+  margin-left: 20px;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/search.svg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  padding: 22px 12px;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  padding: 22px 12px;
 }
 
 .hero {
   display: flex;
   padding: 51px 371px 82px;
-  background-image: url(../images/index-background.jpg);
+  background-image: url("../images/index-background.jpg");
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
 
 .advantages-list {
@@ -119,7 +159,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-
 }
 
 .advantages-caption, .services-caption, .hotels-title {
@@ -175,12 +214,20 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 30px;
-
 }
 
 .advantages-title.another-color {
   color: #FFFFFF;
   width: 175px;
+}
+
+.advantages-item-one-block::before {
+  content: "";
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  top: 86px;
+  width: 60px;
 }
 
 .advantages-description.another-color {
@@ -218,6 +265,15 @@ body {
   margin: 0;
 }
 
+.advantages-item-two::before {
+  content: "";
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  height: 2px;
+  top: 86px;
+  width: 60px;
+}
+
 .advantages-item-three {
   display: flex;
   flex-direction: column;
@@ -229,6 +285,15 @@ body {
   margin: 0;
 }
 
+.advantages-item-three::before {
+  content: "";
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  height: 2px;
+  top: 86px;
+  width: 60px;
+}
+
 .advantages-item-four {
   display: flex;
   flex-direction: column;
@@ -238,6 +303,15 @@ body {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   margin: 0;
+}
+
+.advantages-item-four::before {
+  content: "";
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  height: 2px;
+  top: 86px;
+  width: 60px;
 }
 
 .services-text {
@@ -279,6 +353,22 @@ body {
   width: 230px;
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 102px;
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: top;
+}
+
+.services-title-house {
+  background-image: url("../images/house.svg");
+}
+
+.services-title-food {
+  background-image: url("../images/food.svg");
+}
+
+.services-title-souvenir {
+  background-image: url("../images/souvenir.svg");
 }
 
 .services-description {
@@ -295,7 +385,7 @@ body {
   align-items: center;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding: 80px 85px;
+  padding: 81px 85px;
 }
 
 .services-item {
@@ -353,7 +443,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #455a68;
+  background-image: url("../images/Subscribe.png");
   padding: 96px 258px 104px;
 }
 
@@ -371,6 +461,7 @@ body {
 }
 
 .button.newsletter-button {
+  display: flex;
   font-family: 'PT Sans';
   font-style: normal;
   background: #82B3D3;
@@ -380,6 +471,19 @@ body {
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  padding: 8px 50px;
+}
+
+.button.newsletter-button:hover {
+  background: #68A2CA;
+}
+
+.button.newsletter-button:focus {
+  background: #68A2CA;
+}
+
+.button.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .mailing-list-title {
@@ -417,23 +521,64 @@ body {
 
 .button.newsletter-button {
   margin: 0;
-  padding: 0;
   width: 232px;
   border-width: 0;
 }
 
   .footer-social {
   display: flex;
+  justify-content: space-between;
   padding: 40px 70px 30px;
   list-style-type: none;
 }
 
 .footer-social-list {
+  display: flex;
+  align-items: center;
   width: 142px;
-  height: 40px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-social-item {
+  display: flex;
+  width: 47.33px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 47.33px;
+}
+
+.footer-social-link:hover {
+  background-color: #68A2CA;
+}
+
+.footer-social-link:focus {
+  background-color: #68A2CA;
+}
+
+.footer-social-link:active {
+  background: rgba(104, 162, 202, 0.3);
+}
+
+.footer-social-vk {
+  background-image: url("../images/social/social-vk.svg");
+  background-size: 24px 14px;
+}
+
+.footer-social-tg {
+  background-image: url("../images/social/social-telegram.svg");
+  background-size: 18px 16px;
+}
+
+.footer-social-youtube {
+  background-image: url("../images/social/social-youtube.svg");
+  background-size: 22px 17px;
 }
 
 .footer-contacts-address-phone {
@@ -449,10 +594,33 @@ body {
   padding-bottom: 5px;
 }
 
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .htmlacademy-link {
 display: flex;
-margin-left: auto;
 align-items: center;
+}
+
+.htmlacademy-link:hover {
+  background-color: #756157;
+}
+
+.htmlacademy-link:focus {
+  background-color: #756157;
+}
+
+.htmlacademy-link:active {
+  background: rgba(117, 97, 87, 0.3);
 }
 
 .main-container {
@@ -761,9 +929,4 @@ list-style-type: none;
 
 .mailing-list-text {
   color: #333333;
-}
-
-.footer-social-item {
-  background: #83B3D3;
-  text-decoration: none;
 }
