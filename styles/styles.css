@@ -23,6 +23,7 @@
   line-height: 21px;
   color: #000000;
   background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -150,6 +151,35 @@ body {
   background-position: center;
   background-size: 20px 20px;
   padding: 22px 12px;
+  position: relative;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  background: #7DB54F;
+  border-radius: 10px;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link::before {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  content: "12";
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  left: calc(50% - 11px/2 + 7.5px);
+  top: calc(50% - 10px/2 - 11px);
+  z-index: 1;
 }
 
 .hero {
@@ -353,7 +383,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  outline: 5px solid 	#5e2fd3;
   list-style-type: none;
 }
 
@@ -547,6 +576,7 @@ body {
   padding: 0;
   border-width: 0;
   background: #F2F2F2;
+  padding-left: 20px;
 }
 
   .footer-social {
@@ -572,37 +602,31 @@ body {
 }
 
 .footer-social-link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
   width: 47.33px;
+  position: relative;
 }
 
-.footer-social-link:hover {
-  background-color: #68A2CA;
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
-.footer-social-link:focus {
-  background-color: #68A2CA;
+.footer-social-icon:hover {
+ fill:#68A2CA;
 }
 
-.footer-social-link:active {
-  background: rgba(104, 162, 202, 0.3);
+.footer-social-icon:focus {
+  fill: #68A2CA;
 }
 
-.footer-social-vk {
-  background-image: url("../images/social/social-vk.svg");
-  background-size: 24px 14px;
-}
-
-.footer-social-tg {
-  background-image: url("../images/social/social-telegram.svg");
-  background-size: 18px 16px;
-}
-
-.footer-social-youtube {
-  background-image: url("../images/social/social-youtube.svg");
-  background-size: 22px 17px;
+.footer-social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-address-phone {
@@ -657,8 +681,12 @@ align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url("../images/Filter.png");
+  background-image: url("../images/background-catalog.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 35px 70px 70px;
+  box-sizing: border-box;
+  width: 1200px;
 }
 
 .inner-catalog-products-title {
@@ -730,34 +758,65 @@ align-items: center;
   margin: 0;
   margin-right: 70px;
   padding: 0;
-  width: 150px;
+  border: none;
+  margin-bottom: 3px;
+}
+
+.catalog-filter-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  line-height: 23px;
 }
 
 .catalog-filter-list {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filter-group-type {
-  margin-right: 0;
+  display: flex;
+  margin: 0;
   padding: 0;
-  width: 150px;
+  border: none;
+  margin-bottom: 3px;
 }
 
 .filter-button {
   width: 550px;
+  height: 160px;
   margin-left: auto;
 }
 
 .catalog-filter-title {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.control {
+  display: flex;
 }
 
 .control-input {
+  margin: 0;
   font-size: 18px;
   line-height: 23px;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
 }
 
 .button {
@@ -831,12 +890,39 @@ list-style-type: none;
 }
 
 .select-control {
+  display: flex;
+  padding: 14px 20px;
+  width: 292px;
+  height: 49px;
+  box-sizing: border-box;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  outline: 2px solid #E5E5E5;
+  border-radius: 4px;
+  border: none;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-results-heder {
@@ -875,6 +961,10 @@ list-style-type: none;
   background-repeat: no-repeat;
   background-size: 14px 16px;
   background-position: center;
+}
+
+.design-item-current {
+  border: 2px solid #000000;
 }
 
 .design-item:hover {
