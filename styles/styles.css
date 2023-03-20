@@ -164,7 +164,7 @@ body {
   position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link::after {
+.navigation-link.navigation-favorites::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -175,7 +175,7 @@ body {
   border-radius: 10px;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link::before {
+.navigation-link.navigation-favorites::before {
   position: absolute;
   width: 11px;
   height: 10px;
@@ -1767,7 +1767,7 @@ button::-moz-focus-inner {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .tooltip {
