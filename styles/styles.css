@@ -98,6 +98,10 @@ body {
   position: relative;
 }
 
+.navigation-link:hover {
+  background: #F2F2F2;
+}
+
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
@@ -180,7 +184,7 @@ body {
   width: 11px;
   height: 10px;
   content: "12";
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -217,7 +221,7 @@ body {
 
 .advantages-caption,
 .services-caption,
-.hotels-title {
+.hoteles-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -227,7 +231,7 @@ body {
 
 .advantages-caption-description,
 .services-caption-description,
-.hotels-text {
+.hoteles-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -325,6 +329,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 1200px;
+  background: rgb(209, 169, 140);
 }
 
 .advantages-item-two {
@@ -446,7 +451,7 @@ body {
 }
 
 
-.button.hotels-link {
+.button.hoteles-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,19 +468,19 @@ body {
   border-radius: 4px;
 }
 
-.button.hotels-link:hover {
+.button.hoteles-link:hover {
   background: #615048;
 }
 
-.button.hotels-link:focus {
+.button.hoteles-link:focus {
   background: #615048;
 }
 
-.button.hotels-link:active {
+.button.hoteles-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotels {
+.hoteles {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,13 +489,13 @@ body {
   padding: 96px 304px;
 }
 
-.hotels-title {
+.hoteles-title {
   width: 297px;
   margin: 0;
   margin-bottom: 20px;
 }
 
-.hotels-text {
+.hoteles-text {
   width: 592px;
   margin: 0;
   margin-bottom: 54px;
@@ -503,6 +508,7 @@ body {
   align-items: center;
   text-align: center;
   background-image: url("../images/subscribe.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #68A2CA;
   padding: 96px 258px 104px;
@@ -528,7 +534,7 @@ body {
 
 .button.newsletter-button {
   display: flex;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   background: #82B3D3;
   font-weight: 700;
@@ -858,7 +864,7 @@ padding: 0;
   width: 143px;
   height: 48px;
   margin: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1047,7 +1053,7 @@ padding: 0;
   }
 
 .button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1131,7 +1137,7 @@ button::-moz-focus-inner {
   width: 290px;
   height: 49px;
   box-sizing: border-box;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1149,19 +1155,19 @@ button::-moz-focus-inner {
 }
 
 .select-control:hover {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .select-control:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .select-control:active {
-  border: 2px solid #3F5E72;
+  outline: 2px solid #3F5E72;
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
   background-image: url("../images/arrow-disabled.svg");
 }
@@ -1334,7 +1340,7 @@ button::-moz-focus-inner {
 }
 
 .button-favorites {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1448,7 +1454,7 @@ button::-moz-focus-inner {
 }
 
 .pagination-current {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1458,7 +1464,7 @@ button::-moz-focus-inner {
 }
 
 .pagination-next {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1541,7 +1547,7 @@ button::-moz-focus-inner {
 }
 
 .modal-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1598,7 +1604,7 @@ button::-moz-focus-inner {
 }
 
 .date {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1671,7 +1677,7 @@ button::-moz-focus-inner {
 }
 
 .auth-form-people {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1808,6 +1814,11 @@ button::-moz-focus-inner {
   transform: translateX(-50%);
   z-index: 1;
   margin-top: 15px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
   display: flex;
   align-items: center;
 }
