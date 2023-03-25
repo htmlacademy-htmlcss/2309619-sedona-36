@@ -200,6 +200,7 @@ body {
   display: flex;
   padding: 51px 371px 82px;
   background-image: url("../images/index-background.jpg");
+  background-size: cover;
   position: relative;
   background-color: #68A2CA;
 }
@@ -654,7 +655,7 @@ body {
 }
 
 .footer-contacts-address-phone {
-  display: block;
+  display: flex;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
