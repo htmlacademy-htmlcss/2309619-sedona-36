@@ -662,7 +662,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  width: 331px;
+  width: auto;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -915,6 +915,9 @@ padding: 0;
   background-image: none;
   margin: 0;
 }
+.range-input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .range-scale {
   display: flex;
@@ -1153,6 +1156,7 @@ button::-moz-focus-inner {
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #FFFFFF;
 }
 
 .select-control:hover {
@@ -1694,10 +1698,8 @@ button::-moz-focus-inner {
   background: #F2F2F2;
 }
 
-.auth-form-people::-webkit-outer-spin-button,
-.auth-form-people::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.auth-form-people[type=number] {
+  -webkit-appearance: textfield;
 }
 
 .button-plus-minus-item {
