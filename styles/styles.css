@@ -1425,7 +1425,7 @@ button::-moz-focus-inner {
 }
 
 .pagination-link {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
