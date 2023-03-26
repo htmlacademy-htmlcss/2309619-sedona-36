@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-body">
       <header class="page-header">
         <div class="header-logo">
           <a class="navigation-link-logo" href="#">
-            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="логотип">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="логотип.">
           </a>
         </div>
         <nav class="navigation">
@@ -46,8 +47,8 @@
         <h1 class="visually-hidden">Седона</h1>
         <section class="hero">
           <h2 class="visually-hidden">Херо Блок</h2>
-          <img src="images/welcome.svg" width="458" height="352" alt="картинка с надписями">
-          <img class="hero-background" src="images/vector.svg" width="1200" height="57" alt="декоративный фон">
+          <img src="images/welcome.svg" width="458" height="352" alt="картинка с надписями.">
+          <img class="hero-background" src="images/vector.svg" width="1200" height="57" alt="декоративный фон.">
         </section>
         <section class="advantages">
           <div class="advantages-heder">
@@ -60,7 +61,7 @@
                 <h3 class="advantages-title another-color">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <p class="advantages-description another-color">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-photo" src="images/advantages/photo-1.jpg" width="800" height="385" alt="картинка с домами">
+              <img class="advantages-photo" src="images/advantages/photo-1.jpg" width="800" height="385" alt="картинка с домами.">
             </li>
             <li class="advantages-item-two">
               <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -75,7 +76,7 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item">
-              <img src="images/advantages/photo-2.jpg" width="800" height="385" alt="картинка с мостом дьявола">
+              <img src="images/advantages/photo-2.jpg" width="800" height="385" alt="картинка с мостом дьявола.">
               <div class="advantages-item-one-block">
                 <h3 class="advantages-title another-color">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
                 <p class="advantages-description another-color">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -103,10 +104,10 @@
             </li>
           </ul>
         </section>
-        <section class="hotels">
-          <h2 class="hotels-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-          <p class="hotels-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button hotels-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <section class="hoteles">
+          <h2 class="hoteles-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="hoteles-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button hoteles-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
       </main>
       <footer class="page-footer">
@@ -167,24 +168,23 @@
             <form class="auth-form" action="#" method="post">
               <p class="field-group">
                 <label class="date date-input" for="auth-date-input">Дата Заезда:</label>
-                <input class="auth-form-field field" type="datetime" id="auth-date-input" name="auth-date-input" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="auth-form-field field" type="text" id="auth-date-input" name="auth-date-input" placeholder="Укажите дату" value="27 апреля 2020">
               </p>
               <p class="message error-message">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
                 <label class="date date-out" for="auth-date-out">Дата Выезда:</label>
-                <input class="auth-form-field field" type="datetime" id="auth-date-out" name="auth-date-out" placeholder="Укажите дату" value="1 сентября 2023">
+                <input class="auth-form-field field" type="text" id="auth-date-out" name="auth-date-out" placeholder="Укажите дату" value="1 сентября 2023">
               </p>
               <p class="message">На эти даты есть свободные номера. Пока есть.</p>
               <div class="group-people">
                 <div class="field-group-people field-group-people-adults">
-                  <span class="date adults">Взрослые:</span>
+                  <label class="date adults" for="auth-adults">Взрослые:</label>
                   <p class="input-plus-minus">
                     <button class="button-plus-minus-item button-minus" type="button">
                       <svg class="button-plus-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9v2h14V9H3Z"/>
                       </svg>
                     </button>
-                    <label class="visually-hidden" for="auth-adults">Количество</label>
                     <input class="auth-form-people" type="number" id="auth-adults" name="auth-adults" value="2">
                     <button class="button-plus-minus-item button-plus" type="button">
                       <svg class="button-plus-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="field-group-people field-group-people-children">
                   <span class="children-tooltip-icon">
-                    <span class="date children">Дети:</span>
+                    <label class="date children" for="auth-children">Дети:</label>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-child"></button>
                       <span class="tooltip-text" role="tooltip" id="tooltip-label-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -208,7 +208,6 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9v2h14V9H3Z"/>
                       </svg>
                     </button>
-                    <label class="visually-hidden" for="auth-children">Количество</label>
                     <input class="auth-form-people" type="number" id="auth-children" name="auth-children" value="2">
                     <button class="button-plus-minus-item button-plus" type="button">
                       <svg class="button-plus-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
